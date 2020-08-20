@@ -1,0 +1,67 @@
+#dash-decks {
+display: grid;
+grid-gap: 1.5rem;
+grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr))
+}
+
+.dash-deck {
+height: 10rem;
+background-color: white;
+box-sizing: border-box;
+border: 1px solid #E0E0E0;
+border-radius: 5px;
+background-color: #fff;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dash-deck-title {
+font-weight: 700;
+font-size: 1.2rem;
+height: 65%;
+line-height: 7.5rem;
+text-align: center;
+cursor: pointer;
+}
+
+.dash-deck-tabs {
+height: 35%;
+}
+
+.dash-deck-tabs-container {
+margin: 0px auto;
+width: 7.5rem;
+}
+
+.dash-deck-tabs button {
+border: none;
+outline: none;
+display: block;
+float: left;
+margin: 1rem 0.5rem;
+height: 1.5rem;
+width: 1.5rem;
+opacity: 0.3;
+background-size: 100% auto;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.dash-deck-tabs button:hover {
+cursor: pointer;
+opacity: 0.5;
+}
+
+
+#dash-deck-delete {
+background-image: url("../assets/images/material-icons/delete_sweep_30px.svg");
+
+}
+
+#dash-deck-edit {
+background-image: url("../assets/images/material-icons/mode_30px.svg");
+
+}
+
+#dash-deck-play {
+background-image: url("../assets/images/material-icons/play_arrow_30px.svg");
+}

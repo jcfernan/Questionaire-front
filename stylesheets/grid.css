@@ -1,0 +1,114 @@
+#nav-outer {
+background-color: #FAEED0;
+}
+
+#main-outer {
+background-color: #FCFCFC; 
+}
+
+.container {
+max-width: 1050px;
+padding-left: 1rem;
+padding-right: 1rem;
+margin: 0 auto;
+}
+
+nav {
+margin: 0 0.75rem;
+height: 4rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-areas: "logo buttons"
+}
+
+#nav-logo {
+/* background-color: red; */
+grid-area: logo;
+width: 3rem;
+background-image: url("../assets/images/studioleit-logo-icon.svg");
+background-size: 100% auto;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#nav-buttons {
+grid-area: buttons;
+display: flex;
+justify-content: flex-end;
+}
+
+.nav-button {
+font-weight: 600;
+font-size: 1rem;
+margin: auto 1.5rem;
+width: auto;
+height: 2rem;
+line-height: 2.2rem;
+text-align: center;
+border-radius: 5px;
+}
+
+.nav-button:hover {
+cursor: pointer;
+}
+
+#main {
+padding: 2rem 1rem;
+min-height: 20rem;
+}
+
+.main-inner {
+width: 100%;
+display: grid;
+grid-template-columns: 8fr 4fr;
+grid-column-gap: 1.5rem; 
+grid-template-areas: "content side";
+}
+
+.main-content {
+grid-area: "content";
+}
+
+.main-sidebar {
+grid-area: "side";
+height: 18rem;
+}
+
+.main-title-dash {
+width: 100%;
+display: block;
+margin-bottom: 1rem;
+text-align: center;
+}
+
+.main-title {
+display: grid;
+width: 100%;
+text-align: center;
+margin-bottom: 1rem;
+grid-template-columns: 7rem 1fr 7rem;
+grid-template-areas: "back header next";
+}
+
+.main-title-header {
+grid-area: "title";
+}
+
+.main-title-back {
+grid-area: "back";
+align-self: center;
+cursor: pointer;
+height: 1.2rem;
+line-height: 1.4rem;
+text-align: center;
+font-size: 1rem;
+font-weight: 600;
+}
+
+.main-title-back:hover {
+background-color: #FFDA7C;
+}
+
+.main-title-next {
+grid-area: "next";
+}
