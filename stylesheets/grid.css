@@ -22,7 +22,6 @@ grid-template-areas: "logo buttons"
 }
 
 #nav-logo {
-/* background-color: red; */
 grid-area: logo;
 width: 3rem;
 background-image: url("../assets/images/studioleit-logo-icon.svg");

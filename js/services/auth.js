@@ -6,6 +6,9 @@
         if (user instanceof User) {
         this.currentUser = user
         }
+        else {
+            this.
+        }
     }
 
     static clearCurrentUser() {
